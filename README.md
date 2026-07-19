@@ -149,7 +149,7 @@ Left the default protocol policy settings.
 Configured the remaining settings as required.
 
 
-![Distribution](screenshots/IMG_007.PNG)
+![Distribution](screenshots/IMG_007.png)
 
 
 

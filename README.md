@@ -131,3 +131,77 @@ The static website was successfully deployed and hosted using Amazon S3. Users c
 ## Conclusion
 
 Amazon S3 provides a simple and cost-effective solution for hosting static websites. By creating a bucket, enabling static website hosting, configuring public access permissions, and uploading website files, a fully functional website can be deployed and accessed online.
+
+
+---
+## Hosting the Static Website with Amazon CloudFront
+Project Extension
+
+After successfully hosting the static website on Amazon S3, the next step was to improve performance and content delivery by configuring Amazon CloudFront. CloudFront is AWS's Content Delivery Network (CDN), which caches website content at edge locations around the world, reducing latency and improving load times for users.
+
+---
+## Create a CloudFront Distribution
+
+Navigated to Amazon CloudFront from the AWS Management Console.
+Clicked Create Distribution.
+Under Origin domain, selected the existing S3 bucket containing the static website.
+Left the default protocol policy settings.
+Configured the remaining settings as required.
+
+
+![Distribution](screenshots/IMG_007.PNG)
+
+
+
+
+---
+## Configure the Default Root Object
+
+To ensure the website loads correctly when users visit the CloudFront URL:
+
+Scrolled to the Default Root Object section.
+
+Entered: index.html
+
+Saved the configuration.
+
+![Default Root Object](screenshots/IMG_008.PNG)
+
+
+---
+## Access the Website Through CloudFront
+
+Once the distribution deployment completed:
+
+Opened the CloudFront distribution.
+Copied the Distribution Domain Name.
+Accessed the website using the CloudFront URL.
+
+Visit:
+
+https://d247xgwgo4k12q.cloudfront.net
+
+![CLOUDFRONT WEBSITE](screenshots/IMG_009.PNG)
+
+
+
+
+---
+## Benefits of Using Amazon CloudFront
+
+Using Amazon CloudFront provides several advantages:
+
+Faster website loading through global edge locations.
+
+Reduced latency for users across different geographic regions.
+
+Improved scalability during periods of high traffic.
+
+HTTPS support for secure content delivery.
+
+Better performance by caching static content closer to users.
+
+---
+## Conclusion
+
+By integrating Amazon CloudFront with the existing Amazon S3 static website, the website benefits from AWS's global Content Delivery Network (CDN). CloudFront improves website performance, reduces latency, and provides a more scalable and efficient method of delivering static web content to users worldwide.

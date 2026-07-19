@@ -165,7 +165,7 @@ Entered: index.html
 
 Saved the configuration.
 
-![Default Root Object](screenshots/IMG_008.PNG)
+![Root](screenshots/IMG_008.png)
 
 
 ---
@@ -181,7 +181,7 @@ Visit:
 
 https://d247xgwgo4k12q.cloudfront.net
 
-![CLOUDFRONT WEBSITE](screenshots/IMG_009.PNG)
+![Result](screenshots/IMG_009.png)
 
 
 
